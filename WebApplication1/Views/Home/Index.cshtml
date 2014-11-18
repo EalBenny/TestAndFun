@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/_Shared/_MenuLayout.cshtml";
+}
+
+
+<div class="LoginLayer">
+    <div class="LoginWindow">
+            <fieldset>
+                    <legend>Login</legend>
+                <form>
+                    <div>
+                        <label for="UserEmail" class="label">E-Mail</label>
+                        <input type="email" class="txt" autofocus required placeholder="Din email">
+                    </div>
+                    <div>
+                        <label for="PassWord" class="label">Password</label>
+                        <input type="password" class="txt" required placeholder="Dit password">
+                    </div>
+                    <div>
+                        <input type="submit" name="Login" value="Login">
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                    <legend>Create new profile</legend>
+                <form>
+                    <div>
+                        @Html.ActionLink("Button Name", "Index", null, new { class="classname" })
+                        <input type="submit" name="CreateProfile" value="Create">
+                    </div>
+                </form>
+            </fieldset>
+    </div>
+</div>
+
+
+<article class="Headline">To Do listen</article>
+<article>Gennem dette free tool, får du din egen personlige to do liste.</article>
+<article>Målet er at den skal være let at bruge og derfor kan du vælge om du vil kræve login med email og password, eller du vil nøjes med et link. At vælge linket er naturligvis ikke så sikkert, men gør det meget nemmere at komme hurtigt ind på sin profil.</article>
+<article>Der er også mulighed for at registrere hvor meget tid man bruger på hver enkelt ting i sin liste.</article>
